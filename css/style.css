@@ -7,12 +7,14 @@
 }
 
 body {
-   padding: 0 6%;
    background-color: #faf0f0;
    font-family: "Poppins", sans-serif;
    font-weight: 400;
    margin: 0 auto;
    width: 100%;
+}
+main {
+   padding: 0 6%;
 }
 
 section {
@@ -29,6 +31,14 @@ section {
 .column {
    width: 50%;
    flex: 1;
+}
+
+.section_title {
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 700;
+   padding: 1rem 0;
+   margin-bottom: 50px;
 }
 
 .btn_primary {
@@ -48,7 +58,7 @@ section {
 
 /* Header section */
 header {
-   padding: 35px 0;
+   padding: 35px 6%;
 }
 
 header .container {
@@ -134,4 +144,113 @@ header .container {
 
 .banar_image img {
    width: 60%;
+}
+
+/* More Item Section */
+
+.more_items_section .item_body {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 30px;
+}
+
+.more_items_section .item_body .item_card {
+   background-color: #ffffff;
+   padding: 1.1rem;
+   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.548);
+   border-radius: 3px;
+}
+
+.item_card .item_image {
+   width: 100%;
+   margin-bottom: 1.5rem;
+}
+
+.item_card .item_image img {
+   width: 100%;
+   max-height: 220px;
+}
+
+.item_title {
+   margin-bottom: 1rem;
+   font-size: 1.3rem;
+   color: #242424;
+}
+
+.item_price {
+   font-size: 1.2rem;
+}
+
+.item_desc {
+   font-weight: bold;
+   color: #777777;
+}
+
+.see_more {
+   text-align: right;
+   margin-top: 50px;
+}
+
+.see_more_btn {
+   color: #7c67ed;
+   text-decoration: none;
+   transition: all 0.4s ease-in;
+   padding: 0.4rem 1rem;
+   vertical-align: middle;
+   cursor: pointer;
+   border-radius: 50px;
+}
+
+.see_more_btn > i {
+   margin-left: 10px;
+}
+
+.see_more_btn:hover {
+   background-color: #7c67ed;
+   color: white;
+}
+
+footer {
+   background-color: #161616;
+}
+
+footer .container {
+   padding: 50px 0;
+   text-align: center;
+   color: white;
+}
+
+.footer_title {
+   font-size: 1.2rem;
+}
+
+.footer_body > p {
+   color: #818181;
+}
+
+.footer_icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+}
+.footer_icon a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #7c67ed;
+   border-radius: 100px;
+   width: 35px;
+   height: 35px;
+   text-decoration: none;
+   margin: 0 0.4rem;
+   transition: all 0.4s ease-in;
+}
+
+.footer_icon > a > i {
+   color: white;
+}
+
+.footer_icon > a:hover {
+   background-color: #4324e9;
 }
