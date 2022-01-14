@@ -10,8 +10,40 @@ body {
    padding: 0 6%;
    background-color: #faf0f0;
    font-family: "Poppins", sans-serif;
+   font-weight: 400;
    margin: 0 auto;
    width: 100%;
+}
+
+section {
+   padding: 100px 0;
+}
+
+/* Reuseable Class Declare here */
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.column {
+   width: 50%;
+   flex: 1;
+}
+
+.btn_primary {
+   padding: 0.4rem 1rem;
+   background-color: #7c67ed;
+   text-decoration: none;
+   color: white;
+   vertical-align: middle;
+   border-radius: 50px;
+   transition: all 0.4s ease-in;
+   cursor: pointer;
+}
+
+.btn_primary:hover {
+   background-color: #4324e9;
 }
 
 /* Header section */
@@ -72,4 +104,34 @@ header .container {
 .header_shoping_icon {
    margin-left: 20px;
    cursor: pointer;
+}
+
+/* Banar Section */
+.banar_section h1 {
+   font-weight: 700;
+   font-size: 2.3rem;
+}
+
+.banar_section p {
+   color: #0c0c0c;
+   margin: 1.2rem 0;
+}
+
+.banar_section a > i {
+   margin-left: 10px;
+}
+
+.banar_image {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url("/photos/Circle\ design.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 90%;
+}
+
+.banar_image img {
+   width: 60%;
 }
